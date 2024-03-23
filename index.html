@@ -7,14 +7,15 @@
     <title>ForU</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./scripts.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body onload="activeShowPage()">
-    <div id="preLoader" class="lds-heart">
+    <!-- <div id="preLoader" class="lds-heart">
         <div></div>
-    </div>
+    </div> -->
 
-    <div id="contentLetter" class="contentLetter fadeContent">
+    <!-- <div id="contentLetter" class="contentLetter fadeContent">
 
         <div class="wrapper">
             <div class="lid one">
@@ -29,8 +30,35 @@
                 <img src="./image/flowers.jpg" alt="your flower">
             </div>
         </div>
+    </div> -->
+
+    <div class="card">
+        <p class="grace">To Grace:</p>
+        <div class="textContainer">
+            <div class="textShow">
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+        </div>
+        <img class="" src="./image/hug-nobg.gif" alt="hugHugs">
     </div>
 
+
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hello babe&#x1F496;',
+                'Yesterday, you did a great job', 
+                'And, I noticed you didn\'t seem as happy as usual.',
+                'That made me feel sad and worried about you.',
+                'Let me give you a &#10024; HUGGIES &#10024;',
+                'Hope today is a great day for you, be happy and take care of yourself.',
+                'love you as always Babee&#x1F496;'],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
 </body>
 
 </html>
